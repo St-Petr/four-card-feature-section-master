@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#footer{
+    margin-top: 20px;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 110vh;
+    background-color:hsl(0, 0%, 98%);
+}
+.container{
+    display: flex;
+    width: 85%;
+    height: 90%;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+.grid{
+    width: 100%;
+    height: 63%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-row-gap: 10%;
+    grid-column-gap:4%;
+    margin:auto;
+}
+.grd-1{
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grd-2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grd-3{
+    display: flex;
+    grid-column: 3;
+    grid-row: 1/3;
+    justify-content: center;
+    align-items: center;
+}
+.grd-4{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frm-1, .frm-2, .frm-3, .frm-4{
+    box-shadow: 1px 1px 15px rgba(128, 128, 128, 0.904);
+}
+.frm-1:hover, .frm-2:hover, .frm-3:hover, .frm-4:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.frm-1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.frm-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top:4px solid  hsl(0, 78%, 62%);
+}
+.frm-3{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.frm-4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.frame{
+    border-radius: 7px;
+    padding: 10%;
+}
+p{
+    font-size: 14px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: hsl(229, 6%, 66%);
+    line-height: 30px;
+    font-family: poppins;
+    font-weight: 400;
+}
+h3{
+    color: hsl(234, 11%, 34%);
+    font-family: poppins;
+    font-weight: 700;
+}
+h1{
+    color: hsl(234, 12%, 34%);
+    font-family: poppins;
+    font-weight: 700;
+}
+span{
+    font-weight: 100;
+    color: hsl(229, 6%, 66%);
+    font-family: poppins;
+    font-weight: 200;
+}
+.subh{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    font-weight: 400;
+}
+.fig{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 9%;
+}
+
+@media only screen and (max-width:700px) {
+    body{
+        height: 200vh;
+        width: 100%;
+        height:270vh;
+    }
+    .container{
+        height: 85%;
+        width: 375px;
+    }
+    .grid{
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 10%;
+        grid-column-gap:4%;
+        grid-gap:3%;
+    }
+    .grd-1{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+    .frm-1{
+        height: 100%;
+    }
+    .frm-3{
+        height: 100%;
+    }
+    .grd-2{
+        grid-column: 1/4;
+    }
+    .grd-3{
+        display: flex;
+        grid-column:1/4;
+        grid-row: 4;
+        justify-content: center;
+        align-items: center;
+    }
+    .grd-4{
+        grid-column: 1/4;
+    }
+    .main{
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    h1{
+        font-size: 150%;
+    }
+    #text{
+        font-size: 67%;
+    }
+    footer{
+        margin-top: 15%;
+    }
+}
